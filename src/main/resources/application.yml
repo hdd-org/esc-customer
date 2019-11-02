@@ -6,7 +6,7 @@ spring:
     name: esc-customer
   freemarker:
     temlate-loader-path: classpath:/templates
-    #�رջ��棬��ʱˢ��
+    #关闭缓存，即时刷新
     cache: false
     charset: UTF-8
     check-template-location: true
@@ -21,7 +21,7 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
-  #ע���ַ
+  #注册地址
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
