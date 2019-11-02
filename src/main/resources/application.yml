@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: esc-customer
+  freemarker:
+    temlate-loader-path: classpath:/templates
+    #¹Ø±Õ»º´æ£¬¼´Ê±Ë¢ÐÂ
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attributes: request
+    suffix: .ftl
+  resources:
+    static-locations: classpath:/static
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  #×¢²áµØÖ·
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
