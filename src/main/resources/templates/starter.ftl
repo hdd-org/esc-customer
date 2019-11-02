@@ -56,7 +56,7 @@ desired effect
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-  <#include "/commons/header.ftl">
+  <#include "./commons/header.ftl">
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
