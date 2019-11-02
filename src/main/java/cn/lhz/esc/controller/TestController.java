@@ -17,7 +17,7 @@ public class TestController
     {
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/testIndex")
         public String index(){
             String result = restTemplate.getForObject("http://esc-provider/", String.class);
 
